@@ -1,0 +1,10 @@
+<h2>Tạo mới User</h2>
+<form [formGroup]="newUserForm" (ngSubmit)="createUser()">
+  Username
+  <input type="text" formControlName="username" id="name">
+  Email
+  <input type="text" formControlName="email" id="email">
+  Password
+  <input type="text" formControlName="password" id="password">
+  <button type="submit">Add</button>
+</form>
