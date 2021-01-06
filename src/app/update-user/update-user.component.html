@@ -1,0 +1,10 @@
+<h2>Update User</h2>
+<form [formGroup]="userForm" (ngSubmit)="updateUser()">
+  Username
+  <input type="text" formControlName="username" id="name" value="{{user.username}}">
+  Email
+  <input type="text" formControlName="email" id="email" value="{{user.email}}">
+  Password
+  <input type="text" formControlName="password" id="password" value="{{user.password}}">
+  <button type="submit">Update</button>
+</form>

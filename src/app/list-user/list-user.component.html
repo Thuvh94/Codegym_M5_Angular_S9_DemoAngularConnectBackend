@@ -1,13 +1,18 @@
 <h3>List User</h3>
+<a [routerLink]="['/createUser']">Create User</a>
 <table>
   <tr>
     <th>ID</th>
     <th>Username</th>
     <th>Email</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr *ngFor="let user of listUsers">
     <td>{{user.id}}</td>
     <td>{{user.username}}</td>
     <td>{{user.email}}</td>
+    <td><button [routerLink]="['/updateUser', user.id]">Update</button></td>
+    <td><button (click)="deleteUser(user.id)">Delete</button></td>
   </tr>
 </table>

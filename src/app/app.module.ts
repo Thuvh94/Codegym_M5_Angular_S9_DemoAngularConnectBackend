@@ -7,18 +7,22 @@ import { AppRoutingModule } from './app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import { CreateUserComponent } from './create-user/create-user.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { UpdateUserComponent } from './update-user/update-user.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListUserComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    UpdateUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
